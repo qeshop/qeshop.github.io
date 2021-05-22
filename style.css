@@ -81,7 +81,7 @@ hr{
 	height: 500px;
 	position: fixed;
 	top: var(--header-height);
-	background-image: url(images/header-banner-2.png);
+	background-image: url(header-banner-2.png);
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center center;
