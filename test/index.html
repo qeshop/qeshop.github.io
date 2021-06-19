@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -34,62 +35,244 @@
     <main>
         <div class="content-wrapper">
             <section class="side-section">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum cupiditate magni recusandae officiis adipisci ullam natus minima porro esse? Repellendus.</p>
+                <p>Opening Times:</p>
             </section>
             <section class="products-section">
+                <input type="text" name="search" id="search" placeholder=" Search..." />
                 <table class="products">
                     <thead>
                         <tr>
-                            <th class="product">Product</th>
                             <th class="name">Name</th>
+                            <th class="product">Product</th>
                             <th class="price">Price</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="item">
+                            <td class="name">Schweppes Blackcurrant Cordial</td>
                             <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
-                            <td class="name">Schweppes Cordial</td>
-                            <td class="price">£3.45</td>
+                            <td class="price">£2.70</td>
                         </tr>
                         <tr class="item">
-                            <td class="product"><img src="Images/potNoodle.png" alt="Pot Noodle" class="productImage"></td>
-                            <td class="name">Pot Noodle - Beef & Tomato</td>
-                            <td class="price">£0.99</td>
+                            <td class="name">Schweppes Orange Cordial</td>
+                            <td class="product"><img src="Images/potNoodle.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£2.15</td>
                         </tr>
                         <tr class="item">
-                            <td class="product"><img src="Images/yorkshireTea.png" alt="Yorkshire Tea" class="productImage"></td>
-                            <td class="name">Yorkshire Tea</td>
-                            <td class="price">£3.45</td>
+                            <td class="name">Tango Apple Can</td>
+                            <td class="product"><img src="Images/yorkshireTea.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£0.79</td>
                         </tr>
                         <tr class="item">
+                            <td class="name">Diet Coke Can</td>
                             <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
-                            <td class="name">Schweppes Cordial</td>
-                            <td class="price">£3.45</td>
+                            <td class="price">£0.79</td>
                         </tr>
                         <tr class="item">
+                            <td class="name">Irn-Bru Can</td>
                             <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
-                            <td class="name">Schweppes Cordial</td>
-                            <td class="price">£3.45</td>
+                            <td class="price">£0.36</td>
                         </tr>
                         <tr class="item">
+                            <td class="name">Spring Water Bottle</td>
                             <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
-                            <td class="name">Schweppes Cordial</td>
-                            <td class="price">£3.45</td>
+                            <td class="price">£0.50</td>
                         </tr>
                         <tr class="item">
+                            <td class="name">Sparkling Water Bottle</td>
                             <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
-                            <td class="name">Schweppes Cordial</td>
-                            <td class="price">£3.45</td>
+                            <td class="price">£0.50</td>
                         </tr>
                         <tr class="item">
+                            <td class="name">Aero Hot Chocolate Sachet</td>
                             <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
-                            <td class="name">Schweppes Cordial</td>
-                            <td class="price">£3.45</td>
+                            <td class="price">£0.48</td>
                         </tr>
                         <tr class="item">
+                            <td class="name">Nescafe Gold Coffee Sachet (Y11,12,13)</td>
                             <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
-                            <td class="name">Schweppes Cordial</td>
-                            <td class="price">£3.45</td>
+                            <td class="price">£0.12</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Twinings English Breakfast Tea (50 tea bags)</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£3.50</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Twinings Cranberry & Raspberry Tea (50 tea bags)</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£2.15</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Twinings Camomile Tea (50 tea bags)</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£2.20</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Twinings Earl Grey Tea (50 tea bags)</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£4.20</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Yorkshire Tea (50 tea bags)</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£6.60</td>
+                        </tr>
+
+                        <!-- TREATS -->
+
+                        <tr class="item">
+                            <td class="name">Oreo Original Cookie Pack</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£1.10</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Mini Oreo Tub</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£1.70</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">McVities Hobnobs Milk Chocolate Tub</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£2.28</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Refreshers Strawberry Flavor Chew Bar</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£0.17</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Drumstick Chew Bar</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£0.18</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Amoyzing Noodles Pack</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£1.50</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Pot Noodle Beef & Tomato</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£1.50</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Pot Noodle Chicken & Mushroom</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£1.50</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Pot Noodle Original Curry</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£1.50</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">McCoys Salted Crisps</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£0.90</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">McCoys Thai Sweet Chicken Crisps</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£0.90</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">McCoys Sizzling King Prawn Crisps</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£0.90</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">McCoys Salt & Malt Vinegar Crisps</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£0.90</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Walkers Cheese & Onion Crisps</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£0.90</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Walkers Prawn Cocktail Crisps</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£0.90</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Walkers Salt & Vinegar Crisps</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£0.90</td>
+                        </tr>
+
+                        <!-- TOILETRIES -->
+
+                        <tr class="item">
+                            <td class="name">Travel Care Hands & Face Soap Bar</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£0.18</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Peach Hand, Body & Shower Soap</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£2.20</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Dove Daily Moisture Shampoo</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£2.00</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Raspberry Hair Conditioner</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£1.38</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Sure Woman's Roll-On Anti Perspirant</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£1.20</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Sure Mens Quantum Dry Roll-On Deodorant</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£0.36</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Nivea Men Sensitive Cool Shaving Gel</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£2.20</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Whisper Luxi Tissue Box</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£1.00</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Colgate Deep Clean Whitening Toothpaste</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£1.49</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Enliven Freshmint Mouthwash</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£0.98</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Wisdom Firm Toothbrush</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£0.60</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Mens Gillette Blue II Razor (Y11,12,13)</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£1.20</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">Females Gillette Blue II Razor (Y11,12,13)</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£1.20</td>
+                        </tr>
+                        <tr class="item">
+                            <td class="name">VO5 Firm Hold Hair Gel (ExtraHold)</td>
+                            <td class="product"><img src="Images/bottleImage.png" alt="Schweppes Blackcurrant Cordial" class="productImage"></td>
+                            <td class="price">£2.04</td>
                         </tr>
                     </tbody>
                 </table>
@@ -105,5 +288,18 @@
     <footer>
         <p>Copyright &#xA9; 2021 Oliver Swindles</p>
     </footer>
+    <script>
+        const searchInput = document.getElementById("search");
+        const rows = document.querySelectorAll("tbody tr");
+        console.log(rows);
+        searchInput.addEventListener("keyup", function (event) {
+          const q = event.target.value.toLowerCase();
+          rows.forEach((row) => {
+            row.querySelector("td").textContent.toLowerCase().startsWith(q)
+              ? (row.style.display = "table-row")
+              : (row.style.display = "none");
+          });
+        });
+      </script>
 </body>
 </html>

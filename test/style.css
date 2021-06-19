@@ -3,6 +3,7 @@
   --medium-bg-color: #d4d5d6;
   --medium-dark-bg-color: #686464;
   --dark-bg-color: #30343F;
+  --header-colour: #284b74;
   --light-text-color: #FAFAFF;
   --dark-text-color: #21232b;
   --blue-text-color: #386FA4;
@@ -13,7 +14,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 * {
@@ -41,8 +42,11 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: var(--dark-bg-color);
+  background-color: var(--header-colour);
+  font-weight: bold;
   color: var(--light-text-color);
+  -webkit-box-shadow: 0 10px 10px grey;
+          box-shadow: 0 10px 10px grey;
 }
 
 .brand-title {
@@ -94,6 +98,15 @@ header {
   width: 100%;
   background-color: var(--light-bg-color);
   border-radius: 10px;
+}
+
+#search {
+  border: 3px solid var(--blue-text-color);
+  border-radius: 10px;
+  width: 40%;
+  height: 5%;
+  outline: none;
+  margin-bottom: 10px;
 }
 
 .side-section {
@@ -175,15 +188,27 @@ footer p {
   font-size: 0.75rem;
 }
 
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 80%;
+  }
+}
+
 @media screen and (max-width: 570px) {
   .productImage {
     height: 20vh;
+  }
+  body {
+    font-size: 75%;
   }
 }
 
 @media screen and (max-width: 510px) {
   .productImage {
     height: 16vh;
+  }
+  body {
+    font-size: 70%;
   }
 }
 
@@ -200,6 +225,9 @@ footer p {
 }
 
 @media screen and (max-width: 400px) {
+  body {
+    font-size: 60%;
+  }
   .productImage {
     height: 10vh;
   }
